@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de JARVIS</title>
+<meta name="description" content="Qué datos de Google lee JARVIS, dónde quedan y a quién se envían.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <p class="links"><a href="index.html">← JARVIS</a></p>
+  <h1>Política de privacidad</h1>
+  <p class="lead">Última actualización: 4 de noviembre de 2026.</p>
+
+  <p>JARVIS es un asistente personal que usa solo su dueño, en su propia computadora. No tiene servidores, cuentas de usuario, publicidad ni analítica.</p>
+
+  <h2>Qué datos de Google lee</h2>
+  <ul>
+    <li><strong>Gmail</strong> (<code>gmail.readonly</code>): remitente, asunto, fecha, estado de lectura y texto de los mails recientes de la bandeja de entrada.</li>
+    <li><strong>Google Calendar</strong> (<code>calendar.readonly</code>): título, fecha y hora de los eventos de los próximos días.</li>
+    <li><strong>Google Drive</strong> (<code>drive.metadata.readonly</code>): nombres, tipos y fechas de los archivos, para encontrar el planner semanal. No lee el contenido de los archivos con este permiso.</li>
+    <li><strong>Google Sheets</strong> (<code>spreadsheets.readonly</code>): el contenido de las planillas que parecen un planner semanal.</li>
+  </ul>
+  <p>Todos estos permisos son de solo lectura. JARVIS no puede enviar, crear, editar ni borrar nada en la cuenta de Google.</p>
+
+  <h2>Dónde quedan</h2>
+  <p>Los datos de Google se leen cuando hacen falta y quedan solo en la memoria de la computadora mientras JARVIS los usa, no en archivos. Una excepción: si su dueño le pide a JARVIS que recuerde algo, ese dato queda en un archivo local. El permiso de acceso se guarda en un archivo que solo puede leer el usuario de esa computadora.</p>
+
+  <h2>A quién se envían</h2>
+  <p>Para responder, JARVIS usa dos servicios externos. Solo les envía lo necesario para la pregunta de su dueño:</p>
+  <ul>
+    <li><strong>Anthropic</strong> (Claude): el texto de la pregunta y datos como remitentes y asuntos de mails, títulos de eventos y texto del planner.</li>
+    <li><strong>ElevenLabs</strong>: el audio de lo que dice su dueño, para transcribirlo, y el texto de las respuestas, para leerlas en voz alta. Una respuesta puede incluir datos de Google.</li>
+  </ul>
+  <p>Cada uno trata esos datos según su propia política de privacidad: <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> y <a href="https://elevenlabs.io/privacy-policy">ElevenLabs</a>. JARVIS no le envía datos de Google a nadie más, no los vende y no los usa para publicidad.</p>
+
+  <h2>Uso limitado</h2>
+  <p>El uso de los datos recibidos de las API de Google se rige por la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de API de Google</a>, incluidos sus requisitos de Uso Limitado.</p>
+
+  <h2>Cómo quitar el acceso</h2>
+  <p>El acceso se puede quitar en cualquier momento desde <a href="https://myaccount.google.com/permissions">los permisos de la cuenta de Google</a>. Al quitarlo, JARVIS deja de poder leer esos datos.</p>
+
+  <h2>Contacto</h2>
+  <p>Para consultas sobre esta política, abrí un aviso en <a href="https://github.com/qquaker33/jarvis-asistente/issues">este repositorio de GitHub</a>.</p>
+</main>
+</body>
+</html>
